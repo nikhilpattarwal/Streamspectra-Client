@@ -1,0 +1,36 @@
+
+h3{
+    margin-bottom: 1rem;
+}
+
+.allIcons{
+    display: flex;
+    .wrapper{
+        margin: 0 1rem 1.7rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        cursor: pointer;
+    }
+}
+.main{
+  display: flex;
+flex-direction: row;
+.cont{
+    margin: 0 1rem 1.7rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        .profile{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+        }
+        .name{
+            width: 2rem;
+            height:1rem;
+        }
+}
+}

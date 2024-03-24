@@ -1,0 +1,95 @@
+.mainCont::before {
+    content: "";
+    position: fixed; /* or absolute, depending on your layout needs */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the actual content */
+    background: url("../../assets/backgroundImage.png") center/cover;
+   opacity: 10%;
+   filter: blur(20%); /* Adjust the blur amount as needed */
+  }
+
+  .mainCont{ 
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 1rem;
+    background: #5674e99c;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed for responsiveness */
+    margin: 0 auto; /* Center the container horizontally */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    align-items: center;
+  }
+  
+  /* Adjustments for input */
+  .cont input {
+    width: 100%; /* Make the input full-width */
+    outline: none;
+    height: 2rem;
+    box-sizing: border-box; /* Include padding and border in the total width */
+  }
+  .cont .button{
+    width: 10rem;
+    text-align: center;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    &:hover{
+        outline: none;
+        box-shadow: 0 5 6 7 white;
+        color: rgb(0, 0, 0);
+        background-color: rgb(194, 192, 192);
+    }
+  }
+
+  .cont p{
+    cursor: pointer;
+  }
+  
+
+  .notButton{
+    width: 10rem;
+    text-align: center;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    cursor: not-allowed;
+    background-color: rgb(240, 184, 184);
+    &:hover{
+        outline: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(219, 136, 136);
+    }
+  }
+
+  .cont{
+    animation: myAnimation .5s ease-in-out;
+  }
+
+  @keyframes myAnimation {
+    from {
+      /* Initial styles */
+      opacity: 0;
+    }
+    to {
+      /* Final styles */
+      opacity: 1;
+    }
+  }
