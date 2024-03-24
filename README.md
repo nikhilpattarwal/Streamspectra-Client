@@ -83,6 +83,12 @@ Other dependencies: Refer to package.json for a complete list.
 Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
+
+
+## Connect  Backend
+https://github.com/nikhilpattarwal/Streamspectra-server
+ In Frontend Utils folder please edit base URL according to backend or localhost
+
 ## Contact
 For any inquiries, contact Nikhil via email: nikhilpatterwal123@gmail.com.
 
